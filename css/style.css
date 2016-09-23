@@ -1,0 +1,175 @@
+
+/*reset*/
+*{
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+/*todo o site ou multi locais*/
+body{
+	background-color: #f0f0f0;
+	font-family: 'Arimo', sans-serif, verdana;	
+}
+.container{
+	background-color: #f0f0f0;
+	display: flex;
+	flex-direction: column;
+	margin: 0px auto;
+}
+.container , 
+.menutop   , 
+.row{
+	width: 100%;
+	max-width: 1200px;
+}
+.col-ms-3 ul li:hover ,
+.menutop nav ul li:hover{
+	background-color: #fab807;	
+	border-radius: 15px;
+}
+/*topo*/
+.menutop {
+	text-align: center;	
+	background-color: #111111;
+	position: fixed;	
+}
+.menutop nav ul li{
+	display: inline-block;
+	padding: 15px 30px;
+	width: 80px;
+}
+.menumid nav ul li a ,
+.menutop nav ul li a{	
+	text-decoration: none;
+	color: #fff;
+}
+/*corpo*/
+.banner{	
+	background: url("../img/fundo.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-color: #000;
+	margin-top: 50px;
+	}
+.banner img{
+	padding: 0px 15px;
+}
+/*conteudo*/
+.conteudo{
+	text-align: justify;
+	background-color: #fff;
+	padding: 20px;
+	line-height: 2em;
+}
+.conteudo h2{
+	padding: 5px;
+	margin: 5px;
+}
+.conteudo ul li{
+	margin-left: 15px;
+}
+.conteudo figure{
+	text-align: center;
+	border: 1px solid;
+}
+.conteudo figure figcaption{
+	color: #000;
+	font-size: 0.9em;
+}
+.conteudoimg{
+	float: left;
+	padding: 25px;
+	width: 95%;
+	height: 95%;
+}
+.conteudo ,
+.centralconteudo{
+	color: #5a5a5a;
+}
+/*navegação individual da pagina*/
+.pagename{
+	font-size: 1.1em;
+	background-color: #000;
+	color: #fab807;
+	padding: 5px 0px 5px 10px;
+}
+.centralconteudo{
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+}
+.menumid{
+	width: 18%;
+	background-color: #fab807;
+}
+.menumid ul li{
+	padding: 5px;
+	list-style: none;
+}
+.menumid nav ul li a{
+	color: #000;
+}
+/*Formulario*/
+.formulario{
+	text-align: center;	
+	background-color: #fab807;
+	padding: 10px;
+}
+.formulario h4{
+	font-size: 2.1em;
+}
+.formulario input ,
+.formulario button,
+.formulario textarea{
+	width: 350px;
+	height: 45px;
+	margin: 5px;
+}
+.formulario textarea{
+	height: 150px;
+}
+.botao{	
+	border-radius: 20px;	
+	font-size: 1.1em;
+}
+.botao:hover {
+	background-color: #000;
+	color: #fff;
+	font-size: 1em;
+}
+/*rodape*/
+.row{
+	display: flex;
+	justify-content: space-around;
+	background-color: #111111;
+}
+.col-ms-3{		
+	/*width: 33.33%;*/
+	text-align: center;
+}
+.col-ms-3 h5{
+	font-size: 1.3em;
+	background-color: #000;
+	color: #fab807;
+	padding-top: 4px;
+}
+.col-ms-3 ul li{
+	list-style: none;	
+	padding: 10px 10px;
+}
+
+.col-ms-3 ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+/*Status Envio*/
+.recado{
+	font-size: 1.5em;
+	line-height: 2em;
+	color: #fab807;
+	text-align: center;
+	background-color: #fff;	
+	padding: 50px;
+	width: 600px;
+	height: 250px;
+}
