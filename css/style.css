@@ -36,7 +36,7 @@ body{
 .menutop nav ul li{
 	display: inline-block;
 	padding: 15px 30px;
-	width: 80px;
+	width: 90px;
 }
 .menumid nav ul li a ,
 .menutop nav ul li a{	
@@ -143,6 +143,9 @@ body{
 	justify-content: space-around;
 	background-color: #111111;
 }
+.row p{
+	color: #fff;
+}
 .col-ms-3{		
 	/*width: 33.33%;*/
 	text-align: center;
@@ -172,4 +175,31 @@ body{
 	padding: 50px;
 	width: 600px;
 	height: 250px;
+}
+
+/*pagina administração*/
+.pa{
+	flex-grow: 1;
+}
+.patabela{
+	flex-grow: 11;
+}
+.tabela{
+	width: 100%;
+	text-align: center;
+}
+.tabela thead{
+	font-size: 1.2em;
+	background-color: #ff6600;
+}
+.tabela tr td a{
+	text-decoration: none;
+	width: 150px;
+	height: 70px;
+	border-radius: 5px;	
+	color: #000;
+	background-color: #fcff00;
+}
+.tabela tr:hover{
+	background-color: #fbdb86;
 }

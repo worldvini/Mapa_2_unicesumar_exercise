@@ -9,7 +9,7 @@
 			echo "<li><a href=index.php?pagina=meio&idCategoria=$valor[idCategoria]&titulo=$valor[titulo]>$valor[titulo]</a></li>";
 		}
 			echo "<li><a href=index.php?pagina=contato>Contato<a/></li>";
-			echo "<li><a href=index.php?pagina=login>Login<a/></li>";
+			echo "<li><a href=index.php?pagina=login>Painel Adm<a/></li>";
 	}
 	//cria menu lateral caso necessário
 	function menulateral(){
