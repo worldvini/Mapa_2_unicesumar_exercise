@@ -3,12 +3,14 @@
 	include ("../conexao.php");
 	$login = trim($_POST["login"]);
 	$senha = trim($_POST["senha"]);
+	$senha = md5($senha);
 	$str = "select * from usuario where loginUsuario ='$login' and senhaUsuario ='$senha' ";
 	$requisicao = mysql_query($str);
 	$conteudo = mysql_fetch_array($requisicao);
 	$true = mysql_num_rows($requisicao);
 
-	if($true == 1){		
+	if($true == 1){	
+		$_SESSION["idUsuario"]	= $conteudo[idUsuario];
 		$_SESSION["login"] = $_POST["login"];
 		$_SESSION["nome"] = $conteudo[nomeUsuario];
 		header("location: index.php");

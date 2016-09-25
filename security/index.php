@@ -1,10 +1,12 @@
 <?php 
+	error_reporting (E_ALL & ~ E_NOTICE & ~ E_DEPRECATED);
 	session_start();
 	include("autentica.php");
 	include("../conexao.php");
 	include("../banco/banco.php");
 	//teste se a variavel está funcionando
 	$nome = $_SESSION["nome"];
+	$idUsuario = $_SESSION["idUsuario"];
 	///echo "ate e enfim heim  $nome";
  ?>
  <!DOCTYPE html>
@@ -30,6 +32,9 @@
 						</li>
 						<li>
 							<a href="index.php?pag=pag_meio&pagina=contato&tab=tabContato">Contato</a>
+						</li>
+						<li>
+							<a href="index.php?pag=senha">Trocar Senha</a>
 						</li>
 						<li>
 							<a href="index.php?pag=logout">Sair</a>

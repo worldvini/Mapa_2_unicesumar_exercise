@@ -62,9 +62,9 @@
 			</td>
 			<td colspan=2>
 				<?php
-					echo "<a href=index.php?pag=pag_meio&pagina=categoria&form=formConteudo&id=". $valor['idConteudo'] .">Editar</a> &nbsp; &nbsp;";
+					echo "<a href=index.php?pag=pag_meio&pagina=conteudo&form=formConteudo&acao=editar&id=". $valor['idConteudo'] .">Editar</a> &nbsp; &nbsp;";
 
-					echo "<a href=index.php?pag=pag_meio&pagina=categoria&form=ExcluirConteudo&id=". $valor['idConteudo'] .">Excluir</a>";
+					echo "<a href=index.php?pag=pag_meio&pagina=conteudo&form=formConteudo&acao=excluir&id=". $valor['idConteudo'] .">Excluir</a>";
 				?>				
 			</td>
 		</tr>		

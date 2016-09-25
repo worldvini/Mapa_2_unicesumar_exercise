@@ -11,11 +11,14 @@
 				Comentário
 			</th>
 			<th>
-				Data
+				Recebido
 			</th>
 			<th>
-				Acão
+				Status
 			</th>
+			<th>
+				Abrir
+			</th colspan="2">
 		</tr>
 	</thead>
 	<tbody>		
@@ -42,14 +45,25 @@
 			</td>
 			<td>
 				<?php 
-					echo date('d/m/y -- h:m:s', strtotime($valor['dataCadastro']));
+					echo date('d/m/y -- h:m:s', strtotime($valor['dataContato']));
 				?>				
 			</td>
-			<td colspan=2>
+			<td>
 				<?php
-					echo "<a href=index.php?pag=pag_meio&pagina=categoria&form=formContato&id=". $valor['idContato'] .">Editar</a> &nbsp; &nbsp;";
-
-					echo "<a href=index.php?pag=pag_meio&pagina=categoria&form=ExcluirContato&id=". $valor['idContato'] .">Excluir</a>";
+					if ($valor['confirmacao'] == "0") {
+						echo "Novo";
+					}else{
+						echo "Lido";
+					}
+				?>
+			</td>
+			<td>
+				<?php
+					echo "<a href=index.php?pag=pag_meio&pagina=contato&form=formContato&acao=visualizar&id=". $valor['idContato'] .">Visualizar</a> &nbsp; &nbsp;";
+					//A opção excluir Msg de contato só aparece se alguém já tiver visualizado a mensagem no minimo 1 vez.
+					if ($valor['confirmacao'] == "1") {
+						echo "<a href=index.php?pag=pag_meio&pagina=contato&form=formContato&acao=excluir&id=". $valor['idContato'] .">Excluir</a>";
+					}					
 				?>				
 			</td>
 		</tr>		

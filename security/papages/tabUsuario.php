@@ -51,9 +51,10 @@
 			</td>
 			<td colspan=2>
 				<?php
-					echo "<a href=index.php?pag=pag_meio&pagina=categoria&form=formUsuario&id=". $valor['idusuario'] .">Editar</a> &nbsp; &nbsp;";
+					echo "<a href=index.php?pag=pag_meio&pagina=usuario&form=formUsuario&acao=editar&id=". $valor['idUsuario'] .">Editar</a> &nbsp; &nbsp;";
+					//você não pode excluir o seu próprio usuario
 					if ($valor['nomeUsuario'] != $nome) {
-						echo "<a href=index.php?pag=pag_meio&pagina=categoria&form=ExcluirUsuario&id=". $valor['idUsuario'] .">Excluir</a>";
+						echo "<a href=index.php?pag=pag_meio&pagina=usuario&form=formUsuario&acao=excluir&id=". $valor['idUsuario'] .">Excluir</a>";
 					}					
 				?>				
 			</td>

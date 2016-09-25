@@ -43,9 +43,9 @@
 			</td>
 			<td colspan=2>
 				<?php
-					echo "<a href=index.php?pag=pag_meio&pagina=categoria&form=formCategoria&id=". $valor['idCategoria'] .">Editar</a> &nbsp; &nbsp;";
+					echo "<a href=index.php?pag=pag_meio&pagina=categoria&form=formCategoria&acao=editar&id=". $valor['idCategoria'] .">Editar</a> &nbsp; &nbsp;";
 
-					echo "<a href=index.php?pag=pag_meio&pagina=categoria&form=ExcluirCategoria&id=". $valor['idCategoria'] .">Excluir</a>";
+					echo "<a href=index.php?pag=pag_meio&pagina=categoria&form=formCategoria&acao=excluir&id=". $valor['idCategoria'] .">Excluir</a>";
 				?>				
 			</td>
 		</tr>		
